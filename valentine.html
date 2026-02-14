@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For You 🤍</title>
+
+    <Link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <Link rel="stylesheet" href="valentine.css">
+    
+</head>
+<body>
+    <!-- Floating Floral Background -->
+    <div class="floral-container">
+        <!-- SVG Lily Outlines -->
+        <svg class="flower" width="80" height="80" viewBox="0 0 100 100">
+            <path d="M50 20 Q 30 35, 50 60 Q 70 35, 50 20 M50 60 L50 80" 
+                  stroke="#ff6b9d" stroke-width="1.5" fill="none" opacity="0.6"/>
+            <circle cx="50" cy="15" r="3" fill="#ff6b9d" opacity="0.6"/>
+        </svg>
+        <svg class="flower" width="70" height="70" viewBox="0 0 100 100">
+            <path d="M50 25 Q 35 38, 50 55 Q 65 38, 50 25 M50 55 L50 75" 
+                  stroke="#c9184a" stroke-width="1.5" fill="none" opacity="0.6"/>
+            <circle cx="50" cy="20" r="2.5" fill="#c9184a" opacity="0.6"/>
+        </svg>
+        <svg class="flower" width="75" height="75" viewBox="0 0 100 100">
+            <path d="M50 22 Q 32 36, 50 58 Q 68 36, 50 22 M50 58 L50 78" 
+                  stroke="#ff6b9d" stroke-width="1.5" fill="none" opacity="0.6"/>
+            <circle cx="50" cy="17" r="2.8" fill="#ff6b9d" opacity="0.6"/>
+        </svg>
+        <svg class="flower" width="65" height="65" viewBox="0 0 100 100">
+            <path d="M50 28 Q 38 40, 50 60 Q 62 40, 50 28 M50 60 L50 77" 
+                  stroke="#c9184a" stroke-width="1.5" fill="none" opacity="0.6"/>
+            <circle cx="50" cy="23" r="2.5" fill="#c9184a" opacity="0.6"/>
+        </svg>
+    </div>
+
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- PAGE 1: Soft Entry -->
+        <div class="page active" id="page1">
+            <h1>Hey you <span class="emoji heart-accent">🤍</span></h1>
+            <button class="btn" onclick="nextPage(2)">Click me</button>
+        </div>
+
+        <!-- PAGE 2: Playful -->
+        <div class="page" id="page2">
+            <p style="font-size: 1.3rem; margin-bottom: 25px;">So… I couldn't send flowers.</p>
+            <p class="small-pause" style="font-size: 1.2rem;">
+                And you don't even like roses anyway <span class="emoji">😌</span>
+            </p>
+            <button class="btn" onclick="nextPage(3)">Continue</button>
+        </div>
+
+        <!-- PAGE 3: Personal Touch -->
+        <div class="page" id="page3">
+            <h2>For someone who prefers lilies and cosmos <span class="emoji">🌸</span></h2>
+            <div class="spacer"></div>
+            <p>I think it says something about you.</p>
+            <p>You don't like the obvious things. You like what actually appeals to you.</p>
+            <button class="btn" onclick="nextPage(4)">There's more</button>
+        </div>
+
+        <!-- PAGE 4: Emotional Layer -->
+        <div class="page" id="page4">
+            <p style="margin-bottom: 25px;">I know the past few days haven't been easy.</p>
+            <p style="margin-bottom: 25px;">And I know you try to be strong.</p>
+            <p>But you don't always have to be.</p>
+            <button class="btn" onclick="nextPage(5)">One last thing</button>
+        </div>
+
+        <!-- PAGE 5: Closing -->
+        <div class="page" id="page5">
+            <p style="margin-bottom: 25px;">I couldn't send something physical.</p>
+            <p style="margin-bottom: 25px;">So I built something instead.</p>
+            <p style="margin-bottom: 30px;">Just a small corner of the internet that's yours today.</p>
+            <div class="spacer"></div>
+            <p style="font-size: 1.15rem; color: #3a3a3a;">
+                I'm really glad you can talk to me.
+            </p>
+            <p class="signature"> ~ Abdullahi (⁠◍⁠•⁠ᴗ⁠•⁠◍⁠)⁠❤ </p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    
+    <script src="valentine.js"></script>
+
+</body>
+</html>
